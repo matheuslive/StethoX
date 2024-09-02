@@ -57,8 +57,9 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
         with:
+          gradle-version: "8.0.2" # Quotes required to prevent YAML converting to number
           gradle-home-cache-cleanup: true
-
+     
       - name: Build rhino
         working-directory: rhino
         run: |
