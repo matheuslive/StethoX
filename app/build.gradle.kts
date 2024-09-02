@@ -20,7 +20,7 @@ val keystoreProperties = if (keystorePropertiesFile.exists() && keystoreProperti
 
 android {
     namespace = "io.github.a13e300.tools"
-    compileSdk = 34
+    compileSdk = 35
     signingConfigs {
         if (keystoreProperties != null) {
             create("release") {
@@ -37,7 +37,7 @@ android {
     defaultConfig {
         applicationId = "io.github.a13e300.tools.stethox"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 2
         versionName = "1.0.2"
         externalNativeBuild {
